@@ -16,6 +16,28 @@ A phone-first ultramarathon crew notebook: prepare the next stop, record what ha
 - Live race progress, split CSV, printable reports, and customizable keepsakes.
 - JSON backup/restore and an installable offline-capable web app.
 
+## A look inside
+
+Actual desktop screenshots from a practice session. The runner name, timestamps, recorded quantities and race status shown belong to that test session; these are not official race results. The phone layout adapts to a smaller screen.
+
+### Keep the runner and the next yard in view
+
+The Overview brings together the selected runner, Backyard timing and crew visit. This screenshot shows tracking stopped with the test records retained.
+
+![Backyard Overview showing the runner, returned yards and saved tracking status](assets/screenshots/backyard-overview.png)
+
+### Prepare food, fluids and familiar mixes
+
+Choose food or drinks, reuse a saved bottle mix, and report intake from other aid stations. This visit is shown before intake has been recorded.
+
+![Food and Fluids showing quick choices, a saved drink mix and Report Intake Elsewhere](assets/screenshots/food-and-fluids.png)
+
+### Follow the race as it unfolds
+
+Review recorded mileage, returned yards, elapsed time, travel and rest. Select a compact yard button to expand its breakdown; export reports, splits and keepsakes from the same view.
+
+![Race Progress showing totals, horizontal yard selections and the expanded first yard](assets/screenshots/race-progress.png)
+
 ## Run it on GitHub Pages
 
 The runnable app is in `docs/`. There is no build step or dependency installation.
@@ -34,7 +56,7 @@ Open the address in Android Chrome and use Install / Add to Home Screen when off
 
 ## Your data
 
-Race records are saved in this browser on this device. They are not sent to a crew database or shared with other visitors. This package contains a generic practice runner, not the owner's saved race records. The hosting provider still serves the app files and may record ordinary web access logs.
+Race records are saved in this browser on this device. They are not sent to a crew database or shared with other visitors. The runnable app starts with a generic practice runner and contains no personal race-backup database. The README screenshots show the owner's supplied practice session. The hosting provider still serves the app files and may record ordinary web access logs.
 
 Use **Setup → Export All Races** and keep the downloaded JSON somewhere outside your phone. Restoring a backup replaces the notebook on the receiving device; export any existing data there first. PDFs and CSVs are for reading/sharing, not restoration.
 
