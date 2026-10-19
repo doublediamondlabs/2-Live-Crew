@@ -60,3 +60,25 @@ button,summary{text-transform:capitalize}.gearaccordion{border-bottom:1px solid 
 .progressmetrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px;margin:12px 0}.progressmetrics>div{padding:10px;border-radius:9px;background:#edf1e6}.progressmetrics small,.progressmetrics strong{display:block}.progressmetrics strong{font-size:1.25rem;font-variant-numeric:tabular-nums}.progressrow{padding:12px 0;border-bottom:1px solid var(--line)}.progressrow summary{font-weight:650}.progressrow summary small{display:block;font-weight:400;margin:4px 0 0 18px}.progressrow p,.progressrow li{font-size:.85rem;overflow-wrap:anywhere}.progressrow .progressrow{margin-left:10px}.progressrow ul{padding-left:20px}.keepsake{text-align:center;max-width:800px;margin:auto}.keepsake img{display:block;max-width:100%;max-height:380px;object-fit:contain;margin:20px auto}.keepsakestory{white-space:pre-wrap}.keepsake h1{font-size:38px}.keepsake .progressmetrics{text-align:center}#racePrint{display:none}@media print{body.printingRaceReport>:not(#racePrint){display:none!important}body.printingRaceReport>#racePrint{display:block!important;padding:12mm;color:#193d38;background:white}#racePrint .progressrow{break-inside:avoid}#racePrint .progressrow:has(.progressrow){break-inside:auto}#racePrint summary{list-style:none}#racePrint .progressmetrics{grid-template-columns:repeat(3,1fr)}#racePrint h1{font-size:30px}#racePrint p,#racePrint li{color:#222}.keepsake{break-inside:avoid}}
 
 .progresschoices{display:grid;grid-template-columns:repeat(auto-fill,minmax(88px,1fr));gap:6px;margin:12px 0}.progresschoices button{padding:8px 4px;min-height:54px;border:0;background:#e9ede2;font-size:.9rem}.progresschoices button small{display:block;font-size:.65rem;margin-top:3px}.progresschoices button.selected{background:var(--green);color:white}.progresschoices button.selected small{color:#e2edc9}.progressselected{padding:10px;border:1px solid var(--line);border-radius:10px;margin-bottom:12px}.progressselected[hidden]{display:none}.progressselected p{font-size:.85rem}.progressselected>.progressrow{border:0;padding-bottom:0}
+
+/* Compact mixed-bottle editor: scroll fields, keep Save available. */
+#modal:has(.mixeditor){height:min(760px,92dvh);max-height:92dvh;overflow:hidden}
+#modalForm:has(.mixeditor){height:100%;display:flex;flex-direction:column;min-height:0}
+#modalForm:has(.mixeditor)>.dialoghead,#modalForm:has(.mixeditor)>button[type=submit],#modalForm:has(.mixeditor)>#formError{flex-shrink:0}
+#modalForm:has(.mixeditor)>#fields{overflow-y:auto;min-height:0;flex:1;padding:0 2px 12px;overscroll-behavior:contain}
+#modalForm:has(.mixeditor)>button[type=submit]{width:100%;margin-top:6px}
+.mixquicksummary{font-size:13px;font-weight:700;background:#edf1e6;border-radius:8px;padding:9px;overflow-wrap:anywhere}
+.mixformtabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;position:sticky;top:0;background:white;padding:6px 0;z-index:1}
+.mixformtabs button{padding:8px 4px;min-height:46px;font-size:13px;line-height:1.2}
+.mixformtabs [aria-selected=true]{background:var(--green);color:white}
+.mixeditor [role=tabpanel][hidden]{display:none}
+.mixeditor .twocol{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.mixeditor input,.mixeditor select{min-width:0;padding:10px 8px}
+.mixeditor label{font-size:14px;margin:8px 0}
+.mixeditor small{font-size:12px;line-height:1.4}
+.mixeditor details{margin-top:8px;padding:10px 0}
+.mixsodiumpreview{font-weight:750;color:var(--green)}
+
+.mixformheader{position:sticky;top:0;z-index:2;background:white;padding-top:1px}.mixformheader .mixformtabs{position:static}
+
+.appversion{font-size:12px;font-weight:500;white-space:nowrap}#appVersion{white-space:nowrap}
