@@ -60,7 +60,7 @@ Race records are saved in this browser on this device. They are not sent to a cr
 
 Use **Setup → Export All Races** and keep the downloaded JSON somewhere outside your phone. Restoring a backup replaces the notebook on the receiving device; export any existing data there first. PDFs and CSVs are for reading/sharing, not restoration.
 
-A new hosting address has separate browser storage. Follow [MIGRATION.md](MIGRATION.md) to move existing records. No ChatGPT login or API key is required by this portable app.
+A new hosting address has separate browser storage. Follow [MIGRATION.md](MIGRATION.md) to move existing records. No API key is required by this portable app.
 
 ## First-use rehearsal
 
@@ -78,6 +78,6 @@ Portable candidate: **0.1.1**, based on the tested hosted v48. The GitHub Pages 
 
 ## Sharing and licensing
 
-The package is prepared for a public repository. Choose and add a license before the public release; this preparation does not select a license on the owner's behalf. The name and artwork are project branding, not a claim of affiliation with a musical group or race organizer.
+The name and artwork are project branding, not a claim of affiliation with a musical group or race organizer.
 
 Battery Lean refresh and deliberate race deletion controls are available under **Setup → Battery & Housekeeping**. Battery savings are not yet measured on hardware. Export before removing saved races.
