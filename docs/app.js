@@ -1,4 +1,4 @@
-const CREW_APP_VERSION='0.3.0';
+const CREW_APP_VERSION='0.3.1';
 const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const KEY='2-live-crew:'+new URL('./',location.href).pathname;let tab='Home',selected='runner1',runnerPanel='Overview';
 function seed(){let d=new Date();d.setHours(7,0,0,0);return {version:1,title:'Practice race',start:d.toISOString(),runners:[['runner1','Runner',100,16]].map(([id,name,distance,pace])=>({id,name,distance,pace,override:0,notes:'',logs:[],stops:Array.from({length:distance/10},(_,i)=>({name:i===distance/10-1?'Finish':`Practice crew stop ${i+1}`,mile:(i+1)*10,minutes:i===distance/10-1?0:5,arrival:null,departure:null,notes:'',checks:{}}))} ))};}

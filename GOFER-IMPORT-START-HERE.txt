@@ -1,0 +1,47 @@
+GO’FER + 2 LIVE CREW — PACK THE CREW’S SNACK BAG
+
+This ZIP contains two separate application folders:
+  Gofer/                  Go’fer v0.6.1 desktop update (cumulative)
+  2-Live-Crew/            2 Live Crew v0.3.1 with the Go’fer importer
+
+1. Update Go’fer using the Gofer folder as you have for prior updates.
+   Launch Start-Gofer.cmd. Existing personal data stays in its data folder.
+
+2. Update your existing 2-Live-Crew repository with the 2-Live-Crew folder
+   contents, keeping your existing .git folder. Commit and push through GitHub
+   Desktop, then let your usual GitHub Pages deployment finish. This companion
+   is based on the v0.3.0 source supplied for this project; it adds the importer.
+   Do not create a new repository or change the app’s published URL.
+   Reopen/refresh the installed app until Setup shows v0.3.1.
+   Existing races remain on the same device/browser origin. Do not clear app
+   storage. Export All Races first to keep your own backup.
+
+3. In Go’fer: Food & fuel > Send to 2 Live Crew > Export foods & mixes.
+   Move Gofer-to-2-Live-Crew-fuel.json to the phone (your usual file transfer).
+
+4. In 2 Live Crew: select the intended race, then Setup > Defaults > Import
+   from Go’fer. Choose the file, select the runner, review the items and save.
+   Foods appear in Food Presets; prepared bottle mixes appear in Drink Recipes.
+
+WHAT TRAVELS
+Names, servings, measured fluid volume, label values, ingredient quantities,
+and recipe notes. Calories, sodium and caffeine feed Crew’s current totals.
+Carbs, protein and fat are retained as reference details, not race totals.
+Open a default or mix to read Original Go’fer label & recipe.
+Compound mixes use one prepared batch as one serving, with finished volume in
+mL. No scoop sizes are guessed. Check the actual bottle capacity before use.
+
+WHAT STAYS PUT
+Training plans, daily intake history, workouts, race courses and actual race
+records. Imports add defaults to the selected runner/race only. Existing names
+are skipped (including a repeated import). To import a changed mix separately,
+rename it in Go’fer first. No live sync or automatic publishing is included.
+
+PACE CARD FIX
+If a setting is missing, the message now tells you exactly which one and offers
+Open the missing setting. It retains your entered numbers for you to review.
+
+CHECKED
+44 Go’fer core tests; bridge nutrition/duplicate tests; browser export/import,
+reload, recipe edit and pace-card workflow. Phone-installed PWA update and
+native Windows operation remain local checks.
