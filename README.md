@@ -81,3 +81,27 @@ Portable candidate: **0.1.1**, based on the tested hosted v48. The GitHub Pages 
 The name and artwork are project branding, not a claim of affiliation with a musical group or race organizer.
 
 Battery Lean refresh and deliberate race deletion controls are available under **Setup → Battery & Housekeeping**. Battery savings are not yet measured on hardware. Export before removing saved races.
+
+
+## v0.3.2 — Six nutrients, one serving basis
+
+Foods, drink recipes, reviewed label scans, actual overrides, per-stop totals and
+race totals now support calories (kcal), carbs/protein/fat (g), sodium/caffeine (mg).
+Partial bottles scale all six to prepared drink volume, not bottle capacity.
+Gram values display to one decimal; stored values retain their precision.
+Optional label-serving descriptions accompany the numeric serving basis.
+
+Go’fer exports import all six into the calculation fields. This includes the
+v0.3.1 importer. Existing names are still skipped; replacement imports are not
+part of this release. Training plans and race-day logs are not imported.
+
+Existing records are preserved. Older missing macro values stay unknown, including
+older Go’fer imports whose original reference contains them. Edit a saved default
+and review its serving basis before filling those fields. Past stop entries keep
+their own values and are not rewritten when defaults change.
+
+Validation: `node --test test/*.test.cjs` covers six-nutrient scaling, unknown/zero
+values, actual overrides, consumed-only totals, serving descriptions, OCR parsing
+and the Go’fer bridge. Chromium checks cover import, duplicate skip, native recipe
+editing, half-bottle consumption, save/reload and a 390px phone layout. Actual
+Android installed-app update remains a device check.
